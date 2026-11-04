@@ -218,3 +218,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Dataset files
+data/
+*.parquet
+*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+
+# Temporary files
+.DS_Store
