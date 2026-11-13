@@ -78,7 +78,7 @@ In addition to the final held-out evaluation period, a four-fold chronological e
 Reusable classes and helper functions are maintained in the `src/` directory and imported by the notebooks:
 
 - `src/data.py`: chronological data splitting and preprocessing utilities.
-- `src/models.py`: baseline model classes, including Zero, Ridge, and LightGBM wrappers (and additional model wrappers where implemented).
+- `src/models.py`: baseline model classes, including Zero, Ridge and LightGBM wrappers (and additional model wrappers where implemented).
 - `src/utils.py`: the competition's weighted R² metric and memory-conscious Parquet loading utilities.
 
 ### Baseline Models and Results
@@ -108,15 +108,14 @@ The reported experiments use 500,000 training observations and 100,000 held-out 
 
 ## Assignment 2: Proposed Solution
 
-This section will be updated when the proposed solution has been implemented and evaluated. It will describe the proposed method, its motivation, implementation details, validation setup, and results.
+This section will be updated when the proposed solution has been implemented and evaluated. It will describe the proposed method, its motivation, implementation details, validation setup and results.
 
-## Repository Structure
+## Current Repository Structure
 
 ```text
 GROUP02_CENG313/
 ├── README.md
 ├── assignment1_eda_baseline.ipynb
-├── assignment2_solution.ipynb
 └── src/
     ├── data.py
     ├── models.py
@@ -132,13 +131,9 @@ The repository must not contain downloaded competition data or other large data 
 1. Open `assignment1_eda_baseline.ipynb` in [Google Colab](https://colab.research.google.com/).
 2. Configure Kaggle credentials in Colab Secrets using the names expected by the notebook (for example, `KAGGLE_USERNAME` and `KAGGLE_KEY`).
 3. Ensure the required Python packages are installed. The notebook includes the relevant setup steps.
-4. Run the notebook cells in order. The notebook audits the data, performs preprocessing, imports reusable components from `src/`, and runs the baseline experiments.
+4. Run the notebook cells in order. The notebook audits the data, performs preprocessing, imports reusable components from `src/` and runs the baseline experiments.
 
-A T4 GPU runtime may be selected in Colab if required by the notebook. The baseline implementations should be run using the runtime configuration documented in the notebook.
-
-### Assignment 2
-
-Instructions for running the proposed solution will be added here when Assignment 2 is implemented.
+A T4 GPU runtime should be selected in Colab. The baseline implementations should be run using the runtime configuration documented in the notebook.
 
 ## Progress Logs
 
@@ -149,4 +144,4 @@ Instructions for running the proposed solution will be added here when Assignmen
 
 ## Kaggle Submission History
 
-No Kaggle submission is reported for Assignment 1. The competition is handled as a closed competition for this course project, so the baseline results are reported using the local purged held-out evaluation strategy described above in "**Validation Strategy for the Closed Competition**".
+No Kaggle submission is reported for Assignment 1. The competition is closed, so the baseline results are reported using the local purged held-out evaluation strategy described above in "**Validation Strategy for the Closed Competition**".
